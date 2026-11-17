@@ -1,0 +1,2 @@
+export const metadata = { title: 'সম্পাদকীয় নীতি | SP NEWS' };
+export default function Editorial() { return (<div className="max-w-3xl mx-auto px-4 py-10 bg-white dark:bg-gray-800 rounded-lg shadow mt-6"><h1 className="text-3xl font-black">সম্পাদকীয় নীতি</h1><p className="mt-4 leading-relaxed">SP NEWS সত্য যাচাই, একাধিক উৎস, নিরপেক্ষতা ও সংশোধনের স্বচ্ছতা মেনে চলে। ভুল ধরা পড়লে তা সংশোধন করে জানানো হয়। বিজ্ঞাপন ও সম্পাদকীয় কনটেন্ট আলাদা রাখা হয়।</p></div>); }

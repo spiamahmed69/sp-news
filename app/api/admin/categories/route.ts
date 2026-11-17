@@ -1,0 +1,5 @@
+import { NextResponse } from 'next/server'; import { cookies } from 'next/headers'; import { verifySession } from '@/lib/auth'; import { getCategories, upsertCategory, deleteCategory, slugify } from '@/lib/store';
+function authed() { return !!verifySession(cookies().get('spnews_admin')?.value); }
+export async function GET() { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); return NextResponse.json({ categories: getCategories() }); }
+export async function POST(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); const b=await req.json(); const c={ id:b.id||('c'+Date.now()), name:b.name||'', nameBn:b.nameBn||b.name||'', slug:b.slug||slugify(b.nameBn||b.name||''), description:b.description||'', color:b.color||'#C8102E' }; upsertCategory(c); return NextResponse.json({ ok:true, category:c }); }
+export async function DELETE(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); deleteCategory(new URL(req.url).searchParams.get('id')||''); return NextResponse.json({ ok:true }); }

@@ -1,0 +1,5 @@
+import { NextResponse } from 'next/server'; import { cookies } from 'next/headers'; import { verifySession } from '@/lib/auth'; import { getAuthors, upsertAuthor, deleteAuthor, slugify } from '@/lib/store';
+function authed() { return !!verifySession(cookies().get('spnews_admin')?.value); }
+export async function GET() { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); return NextResponse.json({ authors: getAuthors() }); }
+export async function POST(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); const b=await req.json(); const a={ id:b.id||('a'+Date.now()), name:b.name||'', nameBn:b.nameBn||b.name||'', slug:b.slug||slugify(b.name||''), role:b.role||'প্রতিবেদক', bio:b.bio||'', avatar:b.avatar||'' }; upsertAuthor(a); return NextResponse.json({ ok:true, author:a }); }
+export async function DELETE(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); deleteAuthor(new URL(req.url).searchParams.get('id')||''); return NextResponse.json({ ok:true }); }

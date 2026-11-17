@@ -1,0 +1,3 @@
+import { getSections } from '@/lib/store';
+export const dynamic='force-dynamic';
+export default function Sections(){ const s=getSections(); return (<div><h1 className="text-2xl font-black mb-4">হোমপেজ সেকশন ব্যবস্থাপনা</h1><p className="text-sm text-gray-600 mb-4">সেকশনের ক্রম ও চালু/বন্ধ অবস্থা <code>data/seed.json</code>-এর homepageSections-এ সংরক্ষিত। API: GET/POST /api/admin/sections</p><div className="bg-white dark:bg-gray-800 rounded-lg shadow divide-y">{s.map(x=>(<div key={x.id} className="p-4 flex justify-between"><span>{x.order}. {x.title} ({x.titleEn})</span><span className={x.enabled?'text-green-600':'text-gray-400'}>{x.enabled?'চালু':'বন্ধ'}</span></div>))}</div></div>); }

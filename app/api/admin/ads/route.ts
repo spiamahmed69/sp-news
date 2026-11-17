@@ -1,0 +1,5 @@
+import { NextResponse } from 'next/server'; import { cookies } from 'next/headers'; import { verifySession } from '@/lib/auth'; import { getAllAds, upsertAd, deleteAd } from '@/lib/store';
+function authed() { return !!verifySession(cookies().get('spnews_admin')?.value); }
+export async function GET() { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); return NextResponse.json({ ads: getAllAds() }); }
+export async function POST(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); const b=await req.json(); const ad={ id:b.id||('ad'+Date.now()), title:b.title||'', slot:b.slot||'sidebar', imageUrl:b.imageUrl||'', linkUrl:b.linkUrl||'#', active:b.active!==false }; upsertAd(ad); return NextResponse.json({ ok:true, ad }); }
+export async function DELETE(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); deleteAd(new URL(req.url).searchParams.get('id')||''); return NextResponse.json({ ok:true }); }

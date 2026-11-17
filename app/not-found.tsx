@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return (<div className="max-w-2xl mx-auto px-4 py-24 text-center"><p className="text-7xl font-black text-brand">৪০৪</p><h1 className="text-2xl font-bold mt-4">পৃষ্ঠাটি খুঁজে পাওয়া যায়নি</h1><p className="text-gray-600 dark:text-gray-300 mt-2">দুঃখিত, আপনি যে পৃষ্ঠাটি খুঁজছেন তা নেই বা সরিয়ে নেওয়া হয়েছে।</p><Link href="/" className="inline-block mt-6 bg-brand text-white px-6 py-3 rounded font-bold">হোমপেজে ফিরুন</Link></div>); }

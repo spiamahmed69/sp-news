@@ -1,0 +1,697 @@
+{
+  "settings": {
+    "siteName": "SP NEWS",
+    "siteNameBn": "এসপি নিউজ",
+    "tagline": "সত্য, নির্ভুল ও নিরপেক্ষ সংবাদ",
+    "description": "SP NEWS — বাংলাদেশের প্রিমিয়াম ডিজিটাল সংবাদপত্র। দেশ, আন্তর্জাতিক, রাজনীতি, শিক্ষা, প্রযুক্তি, খেলা, বিনোদন, ব্যবসা ও স্বাস্থ্য সংবাদ।",
+    "logoText": "SP NEWS",
+    "contactEmail": "newsroom@spnews.com.bd",
+    "contactPhone": "+880 2-0000000",
+    "address": "ঢাকা, বাংলাদেশ",
+    "facebook": "https://facebook.com/spnewsbd",
+    "twitter": "https://x.com/spnewsbd",
+    "youtube": "https://youtube.com/@spnewsbd",
+    "seoTitle": "SP NEWS | বাংলাদেশের প্রিমিয়াম ডিজিটাল সংবাদপত্র",
+    "seoDescription": "SP NEWS — সত্য, নির্ভুল ও নিরপেক্ষ সংবাদ। বাংলাদেশ ও বিশ্বের সর্বশেষ খবর।"
+  },
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Bangladesh",
+      "nameBn": "বাংলাদেশ",
+      "slug": "bangladesh",
+      "description": "দেশের সর্বশেষ খবর",
+      "color": "#C8102E"
+    },
+    {
+      "id": "c2",
+      "name": "International",
+      "nameBn": "আন্তর্জাতিক",
+      "slug": "international",
+      "description": "বিশ্ব সংবাদ",
+      "color": "#1D4ED8"
+    },
+    {
+      "id": "c3",
+      "name": "Politics",
+      "nameBn": "রাজনীতি",
+      "slug": "politics",
+      "description": "রাজনীতির খবর",
+      "color": "#7C3AED"
+    },
+    {
+      "id": "c4",
+      "name": "Education",
+      "nameBn": "শিক্ষা",
+      "slug": "education",
+      "description": "শিক্ষা সংবাদ",
+      "color": "#059669"
+    },
+    {
+      "id": "c5",
+      "name": "Technology",
+      "nameBn": "প্রযুক্তি",
+      "slug": "technology",
+      "description": "প্রযুক্তি সংবাদ",
+      "color": "#0891B2"
+    },
+    {
+      "id": "c6",
+      "name": "Sports",
+      "nameBn": "খেলা",
+      "slug": "sports",
+      "description": "খেলাধুলা",
+      "color": "#EA580C"
+    },
+    {
+      "id": "c7",
+      "name": "Entertainment",
+      "nameBn": "বিনোদন",
+      "slug": "entertainment",
+      "description": "বিনোদন সংবাদ",
+      "color": "#DB2777"
+    },
+    {
+      "id": "c8",
+      "name": "Business",
+      "nameBn": "ব্যবসা",
+      "slug": "business",
+      "description": "ব্যবসা-বাণিজ্য",
+      "color": "#65A30D"
+    },
+    {
+      "id": "c9",
+      "name": "Health",
+      "nameBn": "স্বাস্থ্য",
+      "slug": "health",
+      "description": "স্বাস্থ্য সংবাদ",
+      "color": "#DC2626"
+    }
+  ],
+  "authors": [
+    {
+      "id": "a1",
+      "name": "Siam Ahmed",
+      "nameBn": "সিয়াম আহমেদ",
+      "slug": "siam-ahmed",
+      "role": "সম্পাদক",
+      "bio": "SP NEWS-এর সম্পাদক। দীর্ঘদিন ধরে সাংবাদিকতা করছেন।",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"
+    },
+    {
+      "id": "a2",
+      "name": "Rahima Khatun",
+      "nameBn": "রহিমা খাতুন",
+      "slug": "rahima-khatun",
+      "role": "সিনিয়র প্রতিবেদক",
+      "bio": "জাতীয় ও রাজনীতি বিষয়ক সিনিয়র প্রতিবেদক।",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80"
+    },
+    {
+      "id": "a3",
+      "name": "Tanvir Hasan",
+      "nameBn": "তানভীর হাসান",
+      "slug": "tanvir-hasan",
+      "role": "ক্রীড়া প্রতিবেদক",
+      "bio": "ক্রিকেট ও ফুটবল বিষয়ক প্রতিবেদক।",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80"
+    },
+    {
+      "id": "a4",
+      "name": "Nusrat Jahan",
+      "nameBn": "নুসরাত জাহান",
+      "slug": "nusrat-jahan",
+      "role": "প্রযুক্তি প্রতিবেদক",
+      "bio": "প্রযুক্তি ও শিক্ষা বিষয়ক প্রতিবেদক।",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"
+    }
+  ],
+  "ads": [
+    {
+      "id": "ad1",
+      "title": "SAMPLE — শীর্ষ ব্যানার বিজ্ঞাপন",
+      "slot": "top-banner",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80",
+      "linkUrl": "https://example.com",
+      "active": true
+    },
+    {
+      "id": "ad2",
+      "title": "SAMPLE — সাইডবার বিজ্ঞাপন",
+      "slot": "sidebar",
+      "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+      "linkUrl": "https://example.com",
+      "active": true
+    },
+    {
+      "id": "ad3",
+      "title": "SAMPLE — ইন-ফিড বিজ্ঞাপন",
+      "slot": "in-feed",
+      "imageUrl": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80",
+      "linkUrl": "https://example.com",
+      "active": true
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin",
+      "email": "admin@spnews.com.bd",
+      "role": "admin",
+      "createdAt": "2026-11-18T00:00:00Z"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "ঢাকায় মেট্রোরেলের নতুন রুট উদ্বোধন, যাত্রীসেবায় নতুন দিগন্ত",
+      "titleEn": "New metro rail route opens in Dhaka",
+      "slug": "dhaka-metro-new-route",
+      "excerpt": "ঢাকায় মেট্রোরেলের নতুন রুট উদ্বোধন করা হয়েছে। এতে প্রতিদিন লাখো যাত্রীর যাতায়াত সহজ হবে বলে আশা করা হচ্ছে।",
+      "content": "<p>ঢাকায় মেট্রোরেলের নতুন রুট উদ্বোধন করা হয়েছে। আজ সকালে আনুষ্ঠানিকভাবে এই রুটের যাত্রা শুরু হয়।</p><p>কর্তৃপক্ষ জানিয়েছে, নতুন রুটে প্রতিদিন লাখো যাত্রী যাতায়াত করতে পারবেন। যানজট কমাতে এবং নগরবাসীর জীবনযাত্রা সহজ করতে এই প্রকল্প গুরুত্বপূর্ণ ভূমিকা রাখবে।</p><p>যাত্রীরা নতুন সেবায় সন্তোষ প্রকাশ করেছেন। টিকিট কাউন্টারে দীর্ঘ লাইন থাকলেও সেবার মান নিয়ে প্রশংসা করেছেন অনেকে।</p>",
+      "categorySlug": "bangladesh",
+      "authorSlug": "rahima-khatun",
+      "tags": [
+        "মেট্রোরেল",
+        "ঢাকা",
+        "পরিবহন"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": true,
+      "breaking": true,
+      "views": 15241,
+      "publishedAt": "2026-11-18T06:00:00Z",
+      "seoTitle": "ঢাকায় মেট্রোরেলের নতুন রুট উদ্বোধন | SP NEWS",
+      "seoDescription": "ঢাকায় মেট্রোরেলের নতুন রুট উদ্বোধন। যাত্রীসেবায় নতুন দিগন্ত।",
+      "isSample": true
+    },
+    {
+      "id": "2",
+      "title": "বাংলাদেশ ক্রিকেট দলের দুর্দান্ত জয়, সিরিজে এগিয়ে টাইগাররা",
+      "titleEn": "Bangladesh cricket team wins big",
+      "slug": "bangladesh-cricket-win",
+      "excerpt": "ঘরের মাঠে দুর্দান্ত পারফরম্যান্সে জয় পেয়েছে বাংলাদেশ ক্রিকেট দল। সিরিজে এগিয়ে গেল টাইগাররা।",
+      "content": "<p>ঘরের মাঠে দুর্দান্ত পারফরম্যান্সে জয় পেয়েছে বাংলাদেশ ক্রিকেট দল। ব্যাটে-বলে দারুণ ছন্দে ছিলেন খেলোয়াড়রা।</p><p>অধিনায়ক বলেন, দল হিসেবে খেলতে পেরেই এই জয় এসেছে। সামনের ম্যাচগুলোতেও এই ধারা ধরে রাখতে চান তিনি।</p>",
+      "categorySlug": "sports",
+      "authorSlug": "tanvir-hasan",
+      "tags": [
+        "ক্রিকেট",
+        "বাংলাদেশ",
+        "খেলা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": true,
+      "breaking": false,
+      "views": 9840,
+      "publishedAt": "2026-11-17T14:00:00Z",
+      "seoTitle": "বাংলাদেশ ক্রিকেট দলের দুর্দান্ত জয় | SP NEWS",
+      "seoDescription": "বাংলাদেশ ক্রিকেট দলের দুর্দান্ত জয়, সিরিজে এগিয়ে টাইগাররা।",
+      "isSample": true
+    },
+    {
+      "id": "3",
+      "title": "শিক্ষা মন্ত্রণালয়ের নতুন সিদ্ধান্ত: পাঠ্যবইয়ে আসছে বড় পরিবর্তন",
+      "titleEn": "New changes coming to textbooks",
+      "slug": "education-textbook-changes",
+      "excerpt": "নতুন শিক্ষাবর্ষ থেকে পাঠ্যবইয়ে বড় পরিবর্তন আসছে বলে জানিয়েছে শিক্ষা মন্ত্রণালয়।",
+      "content": "<p>নতুন শিক্ষাবর্ষ থেকে পাঠ্যবইয়ে বড় পরিবর্তন আসছে বলে জানিয়েছে শিক্ষা মন্ত্রণালয়।</p><p>পরিবর্তনের লক্ষ্য শিক্ষার্থীদের সৃজনশীলতা বাড়ানো এবং মুখস্থনির্ভর শিক্ষা কমানো। শিক্ষকদের প্রশিক্ষণের ব্যবস্থাও করা হচ্ছে।</p>",
+      "categorySlug": "education",
+      "authorSlug": "nusrat-jahan",
+      "tags": [
+        "শিক্ষা",
+        "পাঠ্যবই"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 7210,
+      "publishedAt": "2026-11-17T10:00:00Z",
+      "seoTitle": "পাঠ্যবইয়ে আসছে বড় পরিবর্তন | SP NEWS",
+      "seoDescription": "শিক্ষা মন্ত্রণালয়ের নতুন সিদ্ধান্ত: পাঠ্যবইয়ে আসছে বড় পরিবর্তন।",
+      "isSample": true
+    },
+    {
+      "id": "4",
+      "title": "বিশ্ব অর্থনীতিতে নতুন মোড়, বাংলাদেশের রপ্তানি বাড়ছে",
+      "titleEn": "Bangladesh exports rising",
+      "slug": "bangladesh-exports-rising",
+      "excerpt": "বিশ্ব অর্থনীতির চ্যালেঞ্জের মধ্যেও বাংলাদেশের রপ্তানি আয় বাড়ছে বলে জানিয়েছে সংশ্লিষ্টরা।",
+      "content": "<p>বিশ্ব অর্থনীতির চ্যালেঞ্জের মধ্যেও বাংলাদেশের রপ্তানি আয় বাড়ছে। তৈরি পোশাক খাতে নতুন বাজার তৈরি হচ্ছে।</p><p>ব্যবসায়ীরা বলছেন, সরকারি সহায়তা ও নতুন বাজার খুঁজে পাওয়ায় রপ্তানি বাড়ছে।</p>",
+      "categorySlug": "business",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "অর্থনীতি",
+        "রপ্তানি",
+        "ব্যবসা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": true,
+      "breaking": false,
+      "views": 5420,
+      "publishedAt": "2026-11-16T12:00:00Z",
+      "seoTitle": "বাংলাদেশের রপ্তানি বাড়ছে | SP NEWS",
+      "seoDescription": "বিশ্ব অর্থনীতিতে নতুন মোড়, বাংলাদেশের রপ্তানি বাড়ছে।",
+      "isSample": true
+    },
+    {
+      "id": "5",
+      "title": "জলবায়ু সম্মেলনে বাংলাদেশের দাবি: ক্ষতিপূরণ তহবিলের দ্রুত বাস্তবায়ন",
+      "titleEn": "Bangladesh demands climate fund action",
+      "slug": "climate-summit-bangladesh",
+      "excerpt": "আন্তর্জাতিক জলবায়ু সম্মেলনে বাংলাদেশ ক্ষতিপূরণ তহবিলের দ্রুত বাস্তবায়নের দাবি জানিয়েছে।",
+      "content": "<p>আন্তর্জাতিক জলবায়ু সম্মেলনে বাংলাদেশ ক্ষতিপূরণ তহবিলের দ্রুত বাস্তবায়নের দাবি জানিয়েছে।</p><p>প্রতিনিধিরা বলেন, জলবায়ু পরিবর্তনের ক্ষতির শিকার দেশগুলোকে দ্রুত সহায়তা দিতে হবে।</p>",
+      "categorySlug": "international",
+      "authorSlug": "rahima-khatun",
+      "tags": [
+        "জলবায়ু",
+        "আন্তর্জাতিক"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 4310,
+      "publishedAt": "2026-11-16T09:00:00Z",
+      "seoTitle": "জলবায়ু সম্মেলনে বাংলাদেশের দাবি | SP NEWS",
+      "seoDescription": "জলবায়ু সম্মেলনে বাংলাদেশের দাবি: ক্ষতিপূরণ তহবিলের দ্রুত বাস্তবায়ন।",
+      "isSample": true
+    },
+    {
+      "id": "6",
+      "title": "নতুন প্রজন্মের স্মার্টফোনে এআই ফিচার, বদলে যাচ্ছে ব্যবহারের অভিজ্ঞতা",
+      "titleEn": "AI features in new smartphones",
+      "slug": "ai-smartphone-features",
+      "excerpt": "নতুন প্রজন্মের স্মার্টফোনে কৃত্রিম বুদ্ধিমত্তার নানা ফিচার যুক্ত হচ্ছে, বদলে যাচ্ছে ব্যবহারের অভিজ্ঞতা।",
+      "content": "<p>নতুন প্রজন্মের স্মার্টফোনে কৃত্রিম বুদ্ধিমত্তার নানা ফিচার যুক্ত হচ্ছে। ছবি তোলা, লেখা ও অনুবাদে এআই সাহায্য করছে।</p><p>বিশেষজ্ঞরা বলছেন, আগামী দিনে এআই হবে স্মার্টফোনের মূল আকর্ষণ।</p>",
+      "categorySlug": "technology",
+      "authorSlug": "nusrat-jahan",
+      "tags": [
+        "প্রযুক্তি",
+        "এআই",
+        "স্মার্টফোন"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 8930,
+      "publishedAt": "2026-11-15T16:00:00Z",
+      "seoTitle": "স্মার্টফোনে এআই ফিচার | SP NEWS",
+      "seoDescription": "নতুন প্রজন্মের স্মার্টফোনে এআই ফিচার, বদলে যাচ্ছে ব্যবহারের অভিজ্ঞতা।",
+      "isSample": true
+    },
+    {
+      "id": "7",
+      "title": "ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসবে দেশি-বিদেশি চলচ্চিত্রের সমাহার",
+      "titleEn": "Dhaka film festival opens",
+      "slug": "dhaka-film-festival",
+      "excerpt": "ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসব শুরু হয়েছে। দেশি-বিদেশি নানা চলচ্চিত্র প্রদর্শিত হচ্ছে।",
+      "content": "<p>ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসব শুরু হয়েছে। দেশি-বিদেশি নানা চলচ্চিত্র প্রদর্শিত হচ্ছে।</p><p>আয়োজকরা জানান, এবার ৪০টির বেশি দেশের চলচ্চিত্র অংশ নিচ্ছে।</p>",
+      "categorySlug": "entertainment",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "চলচ্চিত্র",
+        "বিনোদন",
+        "উৎসব"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 3120,
+      "publishedAt": "2026-11-15T11:00:00Z",
+      "seoTitle": "ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসব | SP NEWS",
+      "seoDescription": "ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসবে দেশি-বিদেশি চলচ্চিত্রের সমাহার।",
+      "isSample": true
+    },
+    {
+      "id": "8",
+      "title": "স্বাস্থ্যসেবায় ডিজিটাল বিপ্লব: টেলিমেডিসিনে ভরসা গ্রামের মানুষের",
+      "titleEn": "Telemedicine reaches rural Bangladesh",
+      "slug": "telemedicine-rural-health",
+      "excerpt": "টেলিমেডিসিন সেবায় গ্রামের মানুষ এখন ঘরে বসেই চিকিৎসকের পরামর্শ পাচ্ছেন।",
+      "content": "<p>টেলিমেডিসিন সেবায় গ্রামের মানুষ এখন ঘরে বসেই চিকিৎসকের পরামর্শ পাচ্ছেন। স্বাস্থ্যসেবায় এটি বড় পরিবর্তন আনছে।</p><p>চিকিৎসকরা বলছেন, দূরত্ব আর স্বাস্থ্যসেবার বাধা নয়।</p>",
+      "categorySlug": "health",
+      "authorSlug": "rahima-khatun",
+      "tags": [
+        "স্বাস্থ্য",
+        "টেলিমেডিসিন"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 2890,
+      "publishedAt": "2026-11-14T13:00:00Z",
+      "seoTitle": "টেলিমেডিসিনে ভরসা গ্রামের মানুষের | SP NEWS",
+      "seoDescription": "স্বাস্থ্যসেবায় ডিজিটাল বিপ্লব: টেলিমেডিসিনে ভরসা গ্রামের মানুষের।",
+      "isSample": true
+    },
+    {
+      "id": "9",
+      "title": "জাতীয় সংসদে বাজেট অধিবেশন: আলোচনায় অর্থনীতি ও কর্মসংস্থান",
+      "titleEn": "Budget session in parliament",
+      "slug": "parliament-budget-session",
+      "excerpt": "জাতীয় সংসদে বাজেট অধিবেশন শুরু হয়েছে। অর্থনীতি ও কর্মসংস্থান নিয়ে আলোচনা চলছে।",
+      "content": "<p>জাতীয় সংসদে বাজেট অধিবেশন শুরু হয়েছে। অর্থনীতি ও কর্মসংস্থান নিয়ে আলোচনা চলছে।</p><p>সরকারি ও বিরোধী দলের সদস্যরা নানা প্রস্তাব তুলে ধরছেন।</p>",
+      "categorySlug": "politics",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "রাজনীতি",
+        "সংসদ",
+        "বাজেট"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": true,
+      "views": 11200,
+      "publishedAt": "2026-11-18T08:00:00Z",
+      "seoTitle": "জাতীয় সংসদে বাজেট অধিবেশন | SP NEWS",
+      "seoDescription": "জাতীয় সংসদে বাজেট অধিবেশন: আলোচনায় অর্থনীতি ও কর্মসংস্থান।",
+      "isSample": true
+    },
+    {
+      "id": "10",
+      "title": "পদ্মা সেতু ঘিরে দক্ষিণাঞ্চলে অর্থনৈতিক জাগরণ",
+      "titleEn": "Economic revival around Padma Bridge",
+      "slug": "padma-bridge-economy",
+      "excerpt": "পদ্মা সেতু ঘিরে দক্ষিণাঞ্চলে অর্থনৈতিক জাগরণ দেখা যাচ্ছে। নতুন শিল্প ও ব্যবসা গড়ে উঠছে।",
+      "content": "<p>পদ্মা সেতু ঘিরে দক্ষিণাঞ্চলে অর্থনৈতিক জাগরণ দেখা যাচ্ছে। নতুন শিল্প ও ব্যবসা গড়ে উঠছে।</p><p>স্থানীয়রা বলছেন, যাতায়াত সহজ হওয়ায় ব্যবসা-বাণিজ্য বেড়েছে।</p>",
+      "categorySlug": "bangladesh",
+      "authorSlug": "rahima-khatun",
+      "tags": [
+        "পদ্মা সেতু",
+        "অর্থনীতি"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 6780,
+      "publishedAt": "2026-11-14T09:00:00Z",
+      "seoTitle": "পদ্মা সেতু ঘিরে অর্থনৈতিক জাগরণ | SP NEWS",
+      "seoDescription": "পদ্মা সেতু ঘিরে দক্ষিণাঞ্চলে অর্থনৈতিক জাগরণ।",
+      "isSample": true
+    },
+    {
+      "id": "11",
+      "title": "ফুটবলে বাংলাদেশের জয়, সমর্থকদের উল্লাস",
+      "titleEn": "Bangladesh football win",
+      "slug": "bangladesh-football-win",
+      "excerpt": "আন্তর্জাতিক প্রীতি ম্যাচে জয় পেয়েছে বাংলাদেশ ফুটবল দল। সমর্থকদের মধ্যে উল্লাস।",
+      "content": "<p>আন্তর্জাতিক প্রীতি ম্যাচে জয় পেয়েছে বাংলাদেশ ফুটবল দল। শেষ মুহূর্তের গোলে জয় নিশ্চিত হয়।</p>",
+      "categorySlug": "sports",
+      "authorSlug": "tanvir-hasan",
+      "tags": [
+        "ফুটবল",
+        "খেলা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 4560,
+      "publishedAt": "2026-11-13T18:00:00Z",
+      "seoTitle": "ফুটবলে বাংলাদেশের জয় | SP NEWS",
+      "seoDescription": "ফুটবলে বাংলাদেশের জয়, সমর্থকদের উল্লাস।",
+      "isSample": true
+    },
+    {
+      "id": "12",
+      "title": "বিশ্ববাজারে তেলের দাম কমছে, স্বস্তি ভোক্তাদের",
+      "titleEn": "Oil prices falling globally",
+      "slug": "oil-prices-falling",
+      "excerpt": "বিশ্ববাজারে তেলের দাম কমছে। এতে ভোক্তাদের স্বস্তি মিলছে বলে মনে করছেন বিশ্লেষকরা।",
+      "content": "<p>বিশ্ববাজারে তেলের দাম কমছে। এতে ভোক্তাদের স্বস্তি মিলছে বলে মনে করছেন বিশ্লেষকরা।</p>",
+      "categorySlug": "international",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "তেল",
+        "আন্তর্জাতিক",
+        "অর্থনীতি"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 2340,
+      "publishedAt": "2026-11-13T10:00:00Z",
+      "seoTitle": "বিশ্ববাজারে তেলের দাম কমছে | SP NEWS",
+      "seoDescription": "বিশ্ববাজারে তেলের দাম কমছে, স্বস্তি ভোক্তাদের।",
+      "isSample": true
+    },
+    {
+      "id": "13",
+      "title": "এইচএসসি পরীক্ষার ফল প্রকাশ, পাসের হার বেড়েছে",
+      "titleEn": "HSC results published",
+      "slug": "hsc-results-published",
+      "excerpt": "এইচএসসি ও সমমান পরীক্ষার ফল প্রকাশিত হয়েছে। এবার পাসের হার বেড়েছে।",
+      "content": "<p>এইচএসসি ও সমমান পরীক্ষার ফল প্রকাশিত হয়েছে। এবার পাসের হার বেড়েছে বলে জানিয়েছে শিক্ষা বোর্ড।</p><p>শিক্ষার্থীরা অনলাইনে ফল দেখতে পারছেন।</p>",
+      "categorySlug": "education",
+      "authorSlug": "nusrat-jahan",
+      "tags": [
+        "এইচএসসি",
+        "শিক্ষা",
+        "ফল"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 13450,
+      "publishedAt": "2026-11-12T11:00:00Z",
+      "seoTitle": "এইচএসসি পরীক্ষার ফল প্রকাশ | SP NEWS",
+      "seoDescription": "এইচএসসি পরীক্ষার ফল প্রকাশ, পাসের হার বেড়েছে।",
+      "isSample": true
+    },
+    {
+      "id": "14",
+      "title": "বাংলাদেশে ৫জি সেবা সম্প্রসারণের পরিকল্পনা",
+      "titleEn": "5G expansion planned in Bangladesh",
+      "slug": "bangladesh-5g-expansion",
+      "excerpt": "দেশে ৫জি সেবা সম্প্রসারণের পরিকল্পনা নেওয়া হয়েছে বলে জানিয়েছে সংশ্লিষ্ট মন্ত্রণালয়।",
+      "content": "<p>দেশে ৫জি সেবা সম্প্রসারণের পরিকল্পনা নেওয়া হয়েছে। প্রথমে বড় শহরগুলোতে সেবা চালু হবে।</p>",
+      "categorySlug": "technology",
+      "authorSlug": "nusrat-jahan",
+      "tags": [
+        "৫জি",
+        "প্রযুক্তি"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 5120,
+      "publishedAt": "2026-11-12T15:00:00Z",
+      "seoTitle": "বাংলাদেশে ৫জি সেবা সম্প্রসারণ | SP NEWS",
+      "seoDescription": "বাংলাদেশে ৫জি সেবা সম্প্রসারণের পরিকল্পনা।",
+      "isSample": true
+    },
+    {
+      "id": "15",
+      "title": "ডেঙ্গু প্রতিরোধে সচেতনতা বাড়ানোর আহ্বান স্বাস্থ্য অধিদপ্তরের",
+      "titleEn": "Health dept urges dengue awareness",
+      "slug": "dengue-awareness",
+      "excerpt": "ডেঙ্গু প্রতিরোধে সচেতনতা বাড়ানোর আহ্বান জানিয়েছে স্বাস্থ্য অধিদপ্তর।",
+      "content": "<p>ডেঙ্গু প্রতিরোধে সচেতনতা বাড়ানোর আহ্বান জানিয়েছে স্বাস্থ্য অধিদপ্তর। বাড়ির আশপাশ পরিষ্কার রাখার পরামর্শ দেওয়া হয়েছে।</p>",
+      "categorySlug": "health",
+      "authorSlug": "rahima-khatun",
+      "tags": [
+        "ডেঙ্গু",
+        "স্বাস্থ্য"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 3980,
+      "publishedAt": "2026-11-11T09:00:00Z",
+      "seoTitle": "ডেঙ্গু প্রতিরোধে সচেতনতা | SP NEWS",
+      "seoDescription": "ডেঙ্গু প্রতিরোধে সচেতনতা বাড়ানোর আহ্বান স্বাস্থ্য অধিদপ্তরের।",
+      "isSample": true
+    },
+    {
+      "id": "16",
+      "title": "শেয়ারবাজারে ঊর্ধ্বগতি, বিনিয়োগকারীদের আস্থা ফিরছে",
+      "titleEn": "Stock market rising",
+      "slug": "stock-market-rising",
+      "excerpt": "শেয়ারবাজারে ঊর্ধ্বগতি দেখা যাচ্ছে। বিনিয়োগকারীদের আস্থা ফিরছে বলে মনে করছেন বিশ্লেষকরা।",
+      "content": "<p>শেয়ারবাজারে ঊর্ধ্বগতি দেখা যাচ্ছে। বিনিয়োগকারীদের আস্থা ফিরছে বলে মনে করছেন বিশ্লেষকরা।</p>",
+      "categorySlug": "business",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "শেয়ারবাজার",
+        "ব্যবসা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 2760,
+      "publishedAt": "2026-11-11T12:00:00Z",
+      "seoTitle": "শেয়ারবাজারে ঊর্ধ্বগতি | SP NEWS",
+      "seoDescription": "শেয়ারবাজারে ঊর্ধ্বগতি, বিনিয়োগকারীদের আস্থা ফিরছে।",
+      "isSample": true
+    },
+    {
+      "id": "17",
+      "title": "জাতীয় দলে ফিরছেন অভিজ্ঞ অলরাউন্ডার, ঘোষণা স্কোয়াড",
+      "titleEn": "Experienced all-rounder returns",
+      "slug": "cricket-squad-announced",
+      "excerpt": "আসন্ন সিরিজের জন্য জাতীয় দলের স্কোয়াড ঘোষণা করা হয়েছে। ফিরছেন অভিজ্ঞ অলরাউন্ডার।",
+      "content": "<p>আসন্ন সিরিজের জন্য জাতীয় দলের স্কোয়াড ঘোষণা করা হয়েছে। ফিরছেন অভিজ্ঞ অলরাউন্ডার।</p><p>কোচ বলেন, অভিজ্ঞতা ও তরুণদের মিশেলে ভারসাম্যপূর্ণ দল গড়া হয়েছে।</p>",
+      "categorySlug": "sports",
+      "authorSlug": "tanvir-hasan",
+      "tags": [
+        "ক্রিকেট",
+        "জাতীয় দল"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 8210,
+      "publishedAt": "2026-11-10T17:00:00Z",
+      "seoTitle": "জাতীয় দলে ফিরছেন অভিজ্ঞ অলরাউন্ডার | SP NEWS",
+      "seoDescription": "জাতীয় দলে ফিরছেন অভিজ্ঞ অলরাউন্ডার, ঘোষণা স্কোয়াড।",
+      "isSample": true
+    },
+    {
+      "id": "18",
+      "title": "ঢাকায় আন্তর্জাতিক বাণিজ্য মেলা শুরু, দেশি-বিদেশি স্টলের সমাহার",
+      "titleEn": "Dhaka trade fair opens",
+      "slug": "dhaka-trade-fair",
+      "excerpt": "ঢাকায় আন্তর্জাতিক বাণিজ্য মেলা শুরু হয়েছে। দেশি-বিদেশি নানা স্টল বসেছে।",
+      "content": "<p>ঢাকায় আন্তর্জাতিক বাণিজ্য মেলা শুরু হয়েছে। দেশি-বিদেশি নানা স্টল বসেছে।</p><p>মেলা চলবে এক মাস। প্রতিদিন হাজারো দর্শনার্থী আসছেন।</p>",
+      "categorySlug": "business",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "বাণিজ্য মেলা",
+        "ঢাকা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&q=80",
+      "gallery": [],
+      "status": "published",
+      "featured": false,
+      "breaking": false,
+      "views": 1870,
+      "publishedAt": "2026-11-10T10:00:00Z",
+      "seoTitle": "ঢাকায় আন্তর্জাতিক বাণিজ্য মেলা | SP NEWS",
+      "seoDescription": "ঢাকায় আন্তর্জাতিক বাণিজ্য মেলা শুরু, দেশি-বিদেশি স্টলের সমাহার।",
+      "isSample": true
+    },
+    {
+      "id": "19",
+      "title": "SAMPLE DRAFT — খসড়া সংবাদ (প্রকাশিত নয়)",
+      "titleEn": "Sample draft",
+      "slug": "sample-draft-article",
+      "excerpt": "এটি একটি খসড়া নমুনা সংবাদ, হোমপেজে দেখাবে না।",
+      "content": "<p>এটি একটি খসড়া নমুনা সংবাদ।</p>",
+      "categorySlug": "bangladesh",
+      "authorSlug": "siam-ahmed",
+      "tags": [
+        "নমুনা"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1200&q=80",
+      "gallery": [],
+      "status": "draft",
+      "featured": false,
+      "breaking": false,
+      "views": 0,
+      "publishedAt": "2026-11-18T00:00:00Z",
+      "seoTitle": "",
+      "seoDescription": "",
+      "isSample": true
+    }
+  ],
+  "contactMessages": [
+    {
+      "id": "m1",
+      "name": "নমুনা পাঠক",
+      "email": "reader@example.com",
+      "subject": "নমুনা বার্তা",
+      "message": "এটি একটি নমুনা যোগাযোগ বার্তা।",
+      "createdAt": "2026-11-17T10:00:00Z",
+      "read": false
+    }
+  ],
+  "newsletterSubscribers": [
+    {
+      "id": "n1",
+      "email": "subscriber@example.com",
+      "createdAt": "2026-11-17T09:00:00Z"
+    }
+  ],
+  "homepageSections": [
+    {
+      "id": "s1",
+      "key": "latest",
+      "title": "সর্বশেষ সংবাদ",
+      "titleEn": "Latest News",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "s2",
+      "key": "trending",
+      "title": "ট্রেন্ডিং",
+      "titleEn": "Trending",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "s3",
+      "key": "most-read",
+      "title": "সর্বাধিক পঠিত",
+      "titleEn": "Most Read",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "s4",
+      "key": "editors-choice",
+      "title": "সম্পাদকের পছন্দ",
+      "titleEn": "Editor's Choice",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "s5",
+      "key": "gallery",
+      "title": "ফটো গ্যালারি",
+      "titleEn": "Photo Gallery",
+      "enabled": true,
+      "order": 5
+    },
+    {
+      "id": "s6",
+      "key": "video",
+      "title": "ভিডিও সংবাদ",
+      "titleEn": "Video News",
+      "enabled": true,
+      "order": 6
+    }
+  ]
+}

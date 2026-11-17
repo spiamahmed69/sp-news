@@ -1,0 +1,2 @@
+export const metadata = { title: 'শর্তাবলি | SP NEWS' };
+export default function Terms() { return (<div className="max-w-3xl mx-auto px-4 py-10 bg-white dark:bg-gray-800 rounded-lg shadow mt-6"><h1 className="text-3xl font-black">শর্তাবলি</h1><p className="mt-4 leading-relaxed">SP NEWS-এর সব সংবাদ ও ছবির স্বত্ব সংরক্ষিত। উৎস উল্লেখ ছাড়া কনটেন্ট পুনঃপ্রকাশ করা যাবে না। মন্তব্য ও বার্তায় শালীনতা বজায় রাখতে হবে।</p></div>); }

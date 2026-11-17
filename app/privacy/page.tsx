@@ -1,0 +1,2 @@
+export const metadata = { title: 'গোপনীয়তা নীতি | SP NEWS' };
+export default function Privacy() { return (<div className="max-w-3xl mx-auto px-4 py-10 bg-white dark:bg-gray-800 rounded-lg shadow mt-6"><h1 className="text-3xl font-black">গোপনীয়তা নীতি</h1><p className="mt-4 leading-relaxed">SP NEWS আপনার ব্যক্তিগত তথ্য (নাম, ইমেইল) শুধু সংবাদ সেবা, নিউজলেটার ও যোগাযোগের উত্তর দিতে ব্যবহার করে। আপনার তথ্য তৃতীয় পক্ষের কাছে বিক্রি করা হয় না। নিউজলেটার থেকে যেকোনো সময় আনসাবস্ক্রাইব করতে পারবেন।</p></div>); }

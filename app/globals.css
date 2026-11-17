@@ -1,0 +1,9 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; }
+body { font-family: "Noto Sans Bengali", system-ui, sans-serif; }
+.font-bengali, h1, h2, h3 { font-family: "Noto Serif Bengali", "Noto Sans Bengali", serif; }
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ticker-track { animation: ticker 40s linear infinite; display: inline-flex; white-space: nowrap; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: none; } }
+.fade-up { animation: fadeUp .5s ease both; }
+.prose-bn p { margin-bottom: 1rem; line-height: 1.9; }
