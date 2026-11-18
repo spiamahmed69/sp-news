@@ -5,7 +5,14 @@ let pool: Pool | null = null;
 export function dbConfigured(): boolean { return !!process.env.DATABASE_URL; }
 export function getPool(): Pool | null {
   if (!process.env.DATABASE_URL) return null;
-  if (!pool) pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 5 });
+  if (!pool) {
+    const url = process.env.DATABASE_URL;
+    // Neon / Vercel Postgres requires SSL; node-pg does not reliably enable
+    // it from `sslmode=require` in the connection string alone, so set it
+    // explicitly. rejectUnauthorized:false is needed for Neon's pooled host.
+    const needsSsl = /sslmode=require|neon\.tech|pooler/i.test(url);
+    pool = new Pool({ connectionString: url, max: 5, connectionTimeoutMillis: 10000, ssl: needsSsl ? { rejectUnauthorized: false } : undefined });
+  }
   return pool;
 }
 export async function dbPing(): Promise<{ ok: boolean; error?: string }> {

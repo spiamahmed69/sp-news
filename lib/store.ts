@@ -99,7 +99,8 @@ async function dbExec(sql: string, params: any[]): Promise<void> {
 // --- Migration + seeding (admin only, via /api/admin/migrate) ---
 export async function migrateDb(): Promise<{ created: boolean; seeded: { articles: number; categories: number; authors: number; ads: number }; counts: { articles: number; categories: number; authors: number } }> {
   const pool = getPool(); if (!pool) throw new Error('DATABASE_URL is not set — cannot migrate. Set DATABASE_URL in Vercel first.');
-  if (!(await checkDb())) throw new Error('Database is unreachable — check DATABASE_URL.');
+  const ping = await dbPing();
+  if (!ping.ok) throw new Error('Database is unreachable — ' + (ping.error || 'check DATABASE_URL.'));
   await pool.query(DB_SCHEMA_SQL);
   dbTablesMissing = false; dbAvailable = true;
   const count = async (t: string) => Number((await pool.query(`SELECT COUNT(*) FROM ${t}`)).rows[0].count);
