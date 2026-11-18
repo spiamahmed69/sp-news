@@ -21,4 +21,5 @@ CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value JSONB);
 CREATE TABLE IF NOT EXISTS ads (id TEXT PRIMARY KEY, title TEXT, slot TEXT, image_url TEXT, link_url TEXT, active BOOLEAN DEFAULT TRUE);
 CREATE TABLE IF NOT EXISTS contact_messages (id TEXT PRIMARY KEY, name TEXT, email TEXT, subject TEXT, message TEXT, created_at TIMESTAMPTZ DEFAULT NOW(), read BOOLEAN DEFAULT FALSE);
 CREATE TABLE IF NOT EXISTS newsletter_subscribers (id TEXT PRIMARY KEY, email TEXT UNIQUE, created_at TIMESTAMPTZ DEFAULT NOW());
+CREATE TABLE IF NOT EXISTS homepage_sections (id TEXT PRIMARY KEY, "key" TEXT, title TEXT, title_en TEXT, enabled BOOLEAN DEFAULT TRUE, "order" INT DEFAULT 0);
 `;

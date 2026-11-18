@@ -1,12 +1,12 @@
 import Link from 'next/link'; import Image from 'next/image';
-import { getPublished, getCategories, getAds } from '@/lib/store';
+import { getPublished, getCategories } from '@/lib/store';
 import ArticleCard from '@/components/ArticleCard'; import AdSlot from '@/components/AdSlot'; import NewsletterForm from '@/components/NewsletterForm';
 export const dynamic = 'force-dynamic';
-export default function Home() {
-  const all = getPublished(); const featured = all.find(a=>a.featured) || all[0];
+export default async function Home() {
+  const all = await getPublished(); const featured = all.find(a=>a.featured) || all[0];
   const latest = all.slice(0,6); const trending = [...all].sort((a,b)=>b.views-a.views).slice(0,5);
   const mostRead = [...all].sort((a,b)=>b.views-a.views).slice(0,5);
-  const editors = all.filter(a=>a.featured).slice(0,4); const cats = getCategories();
+  const editors = all.filter(a=>a.featured).slice(0,4); const cats = await getCategories();
   const videos = [{id:1,title:'ঢাকায় মেট্রোরেলের নতুন রুট — ভিডিও প্রতিবেদন',thumb:'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80'},{id:2,title:'ক্রিকেট: টাইগারদের জয়ের মুহূর্ত',thumb:'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&q=80'},{id:3,title:'পদ্মা সেতু ঘিরে অর্থনৈতিক জাগরণ',thumb:'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80'}];
   return (<div className="max-w-7xl mx-auto px-4 py-6 space-y-10">
     {featured && <section><Link href={`/news/${featured.slug}`}><div className="relative rounded-xl overflow-hidden shadow-lg h-72 sm:h-96"><Image src={featured.featuredImage} alt={featured.title} fill className="object-cover" priority /><div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" /><div className="absolute bottom-0 p-5 sm:p-8 text-white"><span className="bg-brand text-xs font-bold px-2 py-1 rounded">প্রধান সংবাদ</span><h1 className="text-2xl sm:text-4xl font-black mt-2 leading-tight">{featured.title}</h1><p className="mt-2 text-gray-200 hidden sm:block">{featured.excerpt}</p><span className="text-xs mt-2 inline-block">👁 {featured.views.toLocaleString('bn-BD')} • {new Date(featured.publishedAt).toLocaleDateString('bn-BD')}</span></div></div></Link></section>}

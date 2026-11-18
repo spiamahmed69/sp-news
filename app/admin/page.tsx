@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { getArticlesSync, getPublished, getCategories, getAuthors, getContactMessages, getSubscribers, dbStatus, storageStatus, getSettings } from '@/lib/store';
+import { getArticles, getPublished, getCategories, getAuthors, getContactMessages, getSubscribers, dbStatus, storageStatus, getSettings } from '@/lib/store';
 import { adminConfigured } from '@/lib/auth';
 export const dynamic = 'force-dynamic';
-export default function AdminDashboard() {
-  const all = getArticlesSync(); const pub = getPublished(); const totalViews = all.reduce((s,a)=>s+a.views,0);
+export default async function AdminDashboard() {
+  const all = await getArticles(); const pub = await getPublished(); const totalViews = all.reduce((s,a)=>s+a.views,0);
   const db = dbStatus(); const st = storageStatus();
-  const cards = [['মোট সংবাদ', all.length], ['প্রকাশিত', pub.length], ['খসড়া', all.filter(a=>a.status==='draft').length], ['মোট ভিউ', totalViews.toLocaleString('bn-BD')], ['বিভাগ', getCategories().length], ['লেখক', getAuthors().length], ['বার্তা', getContactMessages().length], ['সাবস্ক্রাইবার', getSubscribers().length]];
+  const cards = [['মোট সংবাদ', all.length], ['প্রকাশিত', pub.length], ['খসড়া', all.filter(a=>a.status==='draft').length], ['মোট ভিউ', totalViews.toLocaleString('bn-BD')], ['বিভাগ', (await getCategories()).length], ['লেখক', (await getAuthors()).length], ['বার্তা', (await getContactMessages()).length], ['সাবস্ক্রাইবার', (await getSubscribers()).length]];
   return (<div><h1 className="text-3xl font-black">ড্যাশবোর্ড</h1><p className="text-gray-600 mt-1">স্বাগতম, SP NEWS অ্যাডমিন।</p>
   <div className={`mt-4 p-4 rounded border ${db.connected ? 'bg-green-50 border-green-300 dark:bg-green-950' : 'bg-amber-50 border-amber-300 dark:bg-amber-950'}`}>
     <p className="font-bold">🗄️ ডাটাবেস: {db.mode}</p><p className="text-sm">Configured: {db.configured?'হ্যাঁ':'না'} • Connected: {db.connected?'হ্যাঁ':'না — JSON seed fallback ব্যবহার হচ্ছে, ডাটাবেস সংযুক্ত বলে দেখানো হচ্ছে না'}</p>

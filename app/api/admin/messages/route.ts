@@ -1,4 +1,5 @@
-import { NextResponse } from 'next/server'; import { cookies } from 'next/headers'; import { verifySession } from '@/lib/auth'; import { getContactMessages, markMessageRead, deleteMessage } from '@/lib/store';
+import { NextResponse } from 'next/server'; import { cookies } from 'next/headers'; import { verifySession } from '@/lib/auth';
+import { getContactMessages, markMessageRead, deleteMessage } from '@/lib/store';
 function authed() { return !!verifySession(cookies().get('spnews_admin')?.value); }
-export async function GET() { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); return NextResponse.json({ messages: getContactMessages() }); }
-export async function POST(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); const b=await req.json(); if (b.action==='read') markMessageRead(b.id, true); if (b.action==='delete') deleteMessage(b.id); return NextResponse.json({ ok:true }); }
+export async function GET() { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); try { return NextResponse.json({ messages: await getContactMessages() }); } catch (e:any) { return NextResponse.json({ error: e?.message || 'Failed to load messages' }, { status: 500 }); } }
+export async function POST(req: Request) { if (!authed()) return NextResponse.json({ error:'Unauthorized' },{status:401}); const b=await req.json(); try { if (b.action==='read') await markMessageRead(b.id, true); if (b.action==='delete') await deleteMessage(b.id); } catch (e:any) { return NextResponse.json({ error: e?.message || 'Failed to update message' }, { status: 500 }); } return NextResponse.json({ ok:true }); }

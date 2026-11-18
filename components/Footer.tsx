@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { getCategories, getSettings } from '@/lib/store';
 import NewsletterForm from './NewsletterForm';
-export default function Footer() {
-  const cats = getCategories(); const s = getSettings();
+export default async function Footer() {
+  const cats = await getCategories(); const s = await getSettings();
   return (<footer className="bg-gray-900 text-gray-300 mt-12">
     <div className="max-w-7xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-4">
       <div><div className="text-white font-black text-2xl">SP <span className="text-red-400">NEWS</span></div><p className="text-sm mt-2">{s.description}</p><p className="text-sm mt-3">✉️ {s.contactEmail}<br/>📞 {s.contactPhone}<br/>📍 {s.address}</p></div>

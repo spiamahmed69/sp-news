@@ -1,2 +1,4 @@
-import { NextResponse } from 'next/server'; import { dbStatus, storageStatus } from '@/lib/store'; import { adminConfigured } from '@/lib/auth';
-export async function GET() { return NextResponse.json({ database: dbStatus(), storage: storageStatus(), adminConfigured: adminConfigured(), time: new Date().toISOString() }); }
+import { NextResponse } from 'next/server'; import { dbStatus, storageStatus, getArticles } from '@/lib/store'; import { adminConfigured } from '@/lib/auth';
+// Probes the article source first so dbStatus() reflects a real DB check
+// (connected / tables-missing / unreachable) instead of the initial flag.
+export async function GET() { const articles = await getArticles(); return NextResponse.json({ database: dbStatus(), storage: storageStatus(), adminConfigured: adminConfigured(), articleCount: articles.length, time: new Date().toISOString() }); }

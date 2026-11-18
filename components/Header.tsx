@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { getCategories, getSettings, getPublished } from '@/lib/store';
 import ThemeToggle from './ThemeToggle';
-export default function Header() {
-  const cats = getCategories(); const s = getSettings(); const breaking = getPublished().filter(a=>a.breaking).slice(0,5);
+export default async function Header() {
+  const cats = await getCategories(); const s = await getSettings(); const breaking = (await getPublished()).filter(a=>a.breaking).slice(0,5);
   const today = new Date().toLocaleDateString('bn-BD', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
   return (<header className="sticky top-0 z-40 bg-white dark:bg-gray-900 shadow">
     <div className="bg-brand text-white text-xs sm:text-sm"><div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between gap-2"><span>{today} | ঢাকা, বাংলাদেশ</span><span className="hidden sm:inline">{s.tagline}</span><span><Link href="/admin/login" className="underline">অ্যাডমিন</Link></span></div></div>

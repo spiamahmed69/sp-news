@@ -3,12 +3,12 @@ import { getArticleBySlug, getPublished, relatedArticles, incrementViews, getAut
 import ArticleCard from '@/components/ArticleCard'; import AdSlot from '@/components/AdSlot';
 export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const a = getArticleBySlug(params.slug); if (!a) return { title: 'খবর পাওয়া যায়নি | SP NEWS' };
+  const a = await getArticleBySlug(params.slug); if (!a) return { title: 'খবর পাওয়া যায়নি | SP NEWS' };
   return { title: a.seoTitle || `${a.title} | SP NEWS`, description: a.seoDescription || a.excerpt, openGraph: { title: a.title, description: a.excerpt, type: 'article', images: [a.featuredImage] } };
 }
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const a = getArticleBySlug(params.slug); if (!a || a.status !== 'published') notFound();
-  incrementViews(a.slug); const author = getAuthor(a.authorSlug); const cat = getCategory(a.categorySlug); const related = relatedArticles(a, 4);
+export default async function ArticlePage({ params }: { params: { slug: string } }) {
+  const a = await getArticleBySlug(params.slug); if (!a || a.status !== 'published') notFound();
+  await incrementViews(a.slug); const author = await getAuthor(a.authorSlug); const cat = await getCategory(a.categorySlug); const related = await relatedArticles(a, 4);
   const url = `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/news/${a.slug}`;
   const jsonLd = { '@context':'https://schema.org', '@type':'NewsArticle', headline: a.title, image:[a.featuredImage], datePublished: a.publishedAt, author:{'@type':'Person', name: author?.name || ''}, publisher:{'@type':'Organization', name:'SP NEWS'} };
   return (<div className="max-w-7xl mx-auto px-4 py-6 grid gap-8 lg:grid-cols-3">

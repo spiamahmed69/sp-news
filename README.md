@@ -51,5 +51,6 @@ SESSION_SECRET=<দীর্ঘ র‍্যান্ডম স্ট্রি�
 - `POST /api/contact` `{name,email,subject,message}` — বার্তা সংরক্ষণ
 - `POST /api/auth/login` / `POST /api/auth/logout`
 - `GET /api/status` — ডাটাবেস/স্টোরেজ/অ্যাডমিন স্ট্যাটাস
+- `POST /api/admin/migrate` (অ্যাডমিন কুকি প্রয়োজন) — Postgres টেবিল তৈরি করে এবং articles টেবিল খালি থাকলে সিড ডেটা লোড করে। **DATABASE_URL সেট করার পর Vercel-এ একবার কল করুন** (লগইন করে, যেমন `curl -X POST https://<site>/api/admin/migrate -b cookies.txt`)। ডাটাবেস সংযুক্ত থাকলে অ্যাডমিন থেকে যোগ করা সব সংবাদ Postgres-এ সংরক্ষিত হয়; লেখা ব্যর্থ হলে API 500 দিয়ে জানায়, মিথ্যা ok:true দেয় না।
 - `GET/POST/DELETE /api/admin/articles| categories | authors | ads | settings | messages | sections` (অ্যাডমিন কুকি প্রয়োজন)
 - `POST /api/upload` (multipart `file`, অ্যাডমিন কুকি প্রয়োজন)

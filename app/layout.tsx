@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   openGraph: { title: 'SP NEWS', description: 'বাংলাদেশের প্রিমিয়াম ডিজিটাল সংবাদপত্র', type: 'website', locale: 'bn_BD', siteName: 'SP NEWS' },
   twitter: { card: 'summary_large_image', title: 'SP NEWS', description: 'বাংলাদেশের প্রিমিয়াম ডিজিটাল সংবাদপত্র' },
 };
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const s = getSettings();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const s = await getSettings();
   const jsonLd = { '@context':'https://schema.org', '@type':'NewsMediaOrganization', name:'SP NEWS', alternateName: s.siteNameBn, url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000', description: s.description };
   return (<html lang="bn"><head>
     <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
